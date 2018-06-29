@@ -1,0 +1,26 @@
+doctype html
+html
+  head
+    title= title
+    link(href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous")
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body
+    .navbar .navbar-default(role='navigation')
+    	.container
+    		.nav-header
+      			button.navbar-toggle(type='button',data-toggle='collapse',data-target='navbar-collapse')
+       				span.sr-only Toggle navigation
+       				span.icon-bar
+       				span.icon-bar
+       				span.icon-bar
+       			a.navbar-brand(href='#') Blog
+    		.navbar-collapse.collapse
+    			ul.nav.navbar-nav
+    				li
+    					a(href='/')Home
+    				li
+    					a(href='/users/register')Register
+    				li
+    					a(href='/user/login')Login
+    	.container
+    	block content
